@@ -9,7 +9,7 @@ describe('My first test', () => {
 });
 
 describe('index.html', () => {
-  it ('should say Users', (done) => { // test should be asynchronius so we pass done as parameter
+  it ('should say RoomGame', (done) => { // test should be asynchronius so we pass done as parameter
     const index = fs.readFileSync('./src/index.html', "utf-8");
     jsdom.env(index, function(err, window){ // callback! note to remember
       const h1 = window.document.getElementsByTagName('h1')[0];

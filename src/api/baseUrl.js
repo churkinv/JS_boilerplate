@@ -1,6 +1,6 @@
 export default function getBaseUrl() {
-  return getQueryStringParameterByName('useMockApi') ? 'http://localhost:8081/' : 'https://mysterious-dawn-16770.herokuapp.com/';
-}
+  return getQueryStringParameterByName('useMockApi') ? 'http://localhost:8081/' : '/'; //if useMockApi string exists it will use local host otherwise the address hosted by express //'https://mysterious-dawn-16770.herokuapp.com/'
+} // to use useMockApi add to address in browser: ?useMockApi=true => final result will be like this http://localhost:8080/?useMockApi=true , so we easily swithcing between production build and mock
 
 function getQueryStringParameterByName(name, url) {
   if (!url) url = window.location.href;

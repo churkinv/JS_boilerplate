@@ -24,8 +24,20 @@ export default {
     new webpack.optimize.DedupePlugin(),
 
     // Create HTML file that includes reference to bundled JS.
-    new HtmlWebpackPlugin({
-      template: 'src/index.html',
+    new HtmlWebpackPlugin({ // it will generate index.html file for our prod folder ->dist
+      template: 'src/index.html', // and take our index.html as a template
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      },
       inject: true
     })
   ],
