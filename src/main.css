@@ -1,7 +1,11 @@
-body {
+/* body {
   font-family: Sans-Serif;
 }
 
 table th{
   padding: 5px;
+} */
+* {
+  padding: 0;
+  margin: 0
 }
