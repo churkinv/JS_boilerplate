@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///webpack:///src/main.css"],"names":[],"mappings":"AAOA,EACE,UACA,QAAS","file":"main.9783744431577cdcfea658734b7db20f.css","sourcesContent":["/* body {\n  font-family: Sans-Serif;\n}\n\ntable th{\n  padding: 5px;\n} */\n* {\n  padding: 0;\n  margin: 0\n}\n\n\n/** WEBPACK FOOTER **\n ** webpack:///src/main.css\n **/"],"sourceRoot":""}

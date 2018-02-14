@@ -18,7 +18,7 @@ app.get ('/', function (req, res){// any ref to the root should be handled by th
 });
 
 app.get('/users', function(req, res){
-  //Hard coding for simplicity. Pretend this hits a readl database
+  //Hard coding for simplicity. Pretend this hits a readl database, we can delete it when we deploy to real server like heroku..
   res.json([
     {"id": 1, "firstName": "Arnold", "lastName": "Shwarzeneger", "email" : "a.shwarzeneger@gaml.com" },
     {"id": 2, "firstName": "Emma", "lastName": "Watson", "email" : "e.watson@gaml.com" },
